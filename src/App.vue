@@ -32,7 +32,7 @@
 </template>
 
 <script>
-
+    
 </script>
 
 
@@ -40,6 +40,7 @@
 .appcontainer{
 	padding-top: 40px;
 	overflow: hidden;
+	padding-bottom: 60px;
 }
 
 .v-enter{
