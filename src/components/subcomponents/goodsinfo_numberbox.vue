@@ -23,7 +23,7 @@ export default {
     props:['max'],
     watch:{
         'max':function(newVal,oldVal){
-             mui('.mui-numbox').numbox.setOption('max',newVal);
+             mui('.mui-numbox').numbox().setOption('max',newVal);
         }
     }
 }

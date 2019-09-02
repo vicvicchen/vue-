@@ -67,6 +67,7 @@ export default {
               goodsinfo:[],
               ballFlag:false,
               selectedcount:1,
+              goodsmessage:{},
           }
     },
     created(){
@@ -99,6 +100,15 @@ export default {
         },
         addtoshopcar(){
             this.ballFlag=!this.ballFlag;
+
+            var goodsmessage={
+                id:this.id,
+                count:this.selectedcount,
+                price:this.goodsinfo.sell_price,
+                selected:true
+            };
+
+            this.$store.commit('addToCar',goodsmessage)
         },
         beforeEnter(el){
               el.style.transform='translate(0,0)';
